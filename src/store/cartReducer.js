@@ -21,7 +21,7 @@ const addItemToCart = (cartItems, newItem) => {
 };
 
 const removeItemToCart = (cartItems, newItem) => {
-  if (newItem.quantity == 1) {
+  if (newItem.quantity === 1) {
     return cartItems.filter((item) => item.id !== newItem.id);
   }
 
