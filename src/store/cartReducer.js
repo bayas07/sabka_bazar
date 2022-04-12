@@ -11,7 +11,7 @@ const addItemToCart = (cartItems, newItem) => {
 
   if (isExistingItem) {
     return cartItems.map((cartItem) => {
-      return cartItem.id == newItem.id
+      return cartItem.id === newItem.id
         ? { ...cartItem, quantity: cartItem.quantity + 1 }
         : cartItem;
     });
